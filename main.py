@@ -332,3 +332,5 @@ if __name__ == "__main__":
                               "Категория без продуктов",
                               [])
     print(category_empty.middle_price())
+
+    print(Product.__mro__)

@@ -5,6 +5,8 @@ from src.exceptions import ProductPriceError
 
 
 class BaseProduct(ABC):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
     @abstractmethod
     def __str__(self) -> str:
